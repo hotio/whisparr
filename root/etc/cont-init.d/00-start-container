@@ -1,0 +1,41 @@
+#!/usr/bin/with-contenv bash
+# shellcheck shell=bash
+
+umask "${UMASK}"
+
+echo "
+----------------------------------------------------------------------
+ENVIRONMENT
+----------------------------------------------------------------------
+PUID=${PUID}
+PGID=${PGID}
+UMASK=${UMASK}
+TZ=${TZ}
+----------------------------------------------------------------------
+"
+
+if [[ ! "${PUID}" -eq 0 ]] && [[ ! "${PGID}" -eq 0 ]]; then
+    echo "Executing usermod..."
+    mkdir "/tmp/temphome"
+    usermod -d "/tmp/temphome" hotio
+    usermod -o -u "${PUID}" hotio
+    usermod -d "${CONFIG_DIR}" hotio
+    rm -rf "/tmp/temphome"
+    groupmod -o -g "${PGID}" hotio
+else
+    echo "Running as root is not supported, please fix your PUID and PGID!"
+    exit 1
+fi
+
+echo "Applying permissions to ${CONFIG_DIR}"
+chmod "=rwx" "${CONFIG_DIR}"
+chown hotio:hotio "${CONFIG_DIR}"
+
+if [[ -d "${CONFIG_DIR}/app" ]]; then
+    if [[ -n "$(ls -A "${CONFIG_DIR}/app")" ]]; then
+        echo "Migrating files from \"${CONFIG_DIR}/app\" to \"${CONFIG_DIR}\"..."
+        shopt -s dotglob
+        mv -f "${CONFIG_DIR}/app/"* "${CONFIG_DIR}" > /dev/null 2>&1 && rmdir "${CONFIG_DIR}/app"
+        shopt -u dotglob
+    fi
+fi

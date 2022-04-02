@@ -1,0 +1,312 @@
+name: build
+
+on:
+  push:
+    branches-ignore:
+      - 'dependabot/**'
+
+jobs:
+
+  check:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Shellcheck
+        run: |
+          for file in $(find ./root/etc -type f); do
+            echo "Checking: $file"
+            shellcheck "$file"
+          done
+
+  build:
+    if: "!contains(github.event.head_commit.message, 'skip ci')"
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        architecture: [linux-arm64, linux-amd64]
+    needs: [check]
+    outputs:
+      version: ${{ steps.prep.outputs.version }}
+      branch: ${{ steps.prep.outputs.branch }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Check if architecture exists
+        id: arch_check
+        run: |
+          (test -f ${{ matrix.architecture }}.Dockerfile && echo ::set-output name=check::passed) || echo ::set-output name=check::failed
+
+      - name: Set up QEMU
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: docker/setup-qemu-action@v1
+
+      - name: Set up Docker Buildx
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: docker/setup-buildx-action@v1
+        with:
+          install: true
+          version: latest
+          driver-opts: image=moby/buildkit:master
+
+      - name: Login to DockerHub
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: docker/login-action@v1
+        with:
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Login to GitHub Container Registry
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.PERSONAL_TOKEN }}
+
+      - name: Login to Quay
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: docker/login-action@v1
+        with:
+          registry: quay.io
+          username: ${{ secrets.QUAY_USER }}
+          password: ${{ secrets.QUAY_TOKEN }}
+
+      - name: Prepare
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        id: prep
+        run: |
+          ARCHITECTURE=${{ matrix.architecture }}
+          echo ::set-output name=created::$(date -u +'%Y-%m-%dT%H:%M:%SZ')
+          echo ::set-output name=title::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}
+          echo ::set-output name=revision::${GITHUB_SHA}
+          echo ::set-output name=source::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/tree/${GITHUB_REF//refs\/heads\//}
+          echo ::set-output name=vendor::${{ github.repository_owner }}
+          echo ::set-output name=url::${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/blob/master/README.md
+          echo ::set-output name=platform::${ARCHITECTURE//-/\/}
+          echo ::set-output name=cache::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-cache-${{ matrix.architecture }}
+          echo ::set-output name=tag::${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}-${{ matrix.architecture }}
+          VERSION=$(jq -r '.version // empty' < VERSION.json)
+          if [[ -z ${VERSION} ]]; then
+            VERSION=$(date +"%Y%m%d%H%M%S")
+          fi
+          echo ::set-output name=version::${VERSION}
+          BRANCH=$(jq -r '.branch // empty' < VERSION.json)
+          if [[ -n ${BRANCH} ]]; then
+            echo ::set-output name=branch::-${BRANCH}
+          fi
+          ARGS="$(jq -r 'to_entries[] | [(.key | ascii_upcase),.value] | join("=")' < VERSION.json)"
+          ARGS="${ARGS//'%'/'%25'}"
+          ARGS="${ARGS//$'\n'/'%0A'}"
+          ARGS="${ARGS//$'\r'/'%0D'}"
+          echo "::set-output name=build-args::${ARGS}"
+          echo "::set-output name=package-version::${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7}"
+
+      - name: Build and push
+        if: "contains(steps.arch_check.outputs.check, 'passed')"
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          platforms: ${{ steps.prep.outputs.platform }}
+          file: ./${{ matrix.architecture }}.Dockerfile
+          cache-from: docker.io/${{ steps.prep.outputs.cache }}
+          cache-to: docker.io/${{ steps.prep.outputs.cache }}
+          tags: |
+            docker.io/${{ steps.prep.outputs.tag }}
+            ghcr.io/${{ steps.prep.outputs.tag }}
+            quay.io/${{ steps.prep.outputs.tag }}
+          labels: |
+            org.opencontainers.image.created=${{ steps.prep.outputs.created }}
+            org.opencontainers.image.title=${{ steps.prep.outputs.title }}
+            org.opencontainers.image.revision=${{ steps.prep.outputs.revision }}
+            org.opencontainers.image.source=${{ steps.prep.outputs.source }}
+            org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
+            org.opencontainers.image.url=${{ steps.prep.outputs.url }}
+            org.opencontainers.image.version=${{ steps.prep.outputs.version }}
+          build-args: |
+            GITHUB_TOKEN=${{ secrets.PERSONAL_TOKEN }}
+            BUILD_ARCHITECTURE=${{ matrix.architecture }}
+            PACKAGE_VERSION=${{ steps.prep.outputs.package-version }}
+            ${{ steps.prep.outputs.build-args }}
+
+      - name: Show installed packages & Run tests
+        if: |
+          contains(steps.arch_check.outputs.check, 'passed') &&
+          contains(matrix.architecture, 'amd64')
+        run: |
+          bash update.sh tests docker.io/${{ steps.prep.outputs.tag }}
+
+  publish:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        registry: [docker.io, ghcr.io, quay.io]
+    needs: [build]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Login to DockerHub
+        if: matrix.registry == 'docker.io'
+        uses: docker/login-action@v1
+        with:
+          registry: docker.io
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_TOKEN }}
+
+      - name: Login to GitHub Container Registry
+        if: matrix.registry == 'ghcr.io'
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.PERSONAL_TOKEN }}
+
+      - name: Login to Quay
+        if: matrix.registry == 'quay.io'
+        uses: docker/login-action@v1
+        with:
+          registry: quay.io
+          username: ${{ secrets.QUAY_USER }}
+          password: ${{ secrets.QUAY_TOKEN }}
+
+      - name: Create manifests
+        env:
+          DOCKER_CLI_EXPERIMENTAL: enabled
+        run: |
+          IMAGE=${{ matrix.registry }}/${GITHUB_REPOSITORY}
+          TAG=${GITHUB_REF//refs\/heads\//}
+          SOURCE=${IMAGE}:${TAG}-${GITHUB_SHA:0:7}-${GITHUB_RUN_NUMBER}
+          VERSION=${{ needs.build.outputs.version }}
+          BRANCH=${{ needs.build.outputs.branch }}
+          [[ -f linux-amd64.Dockerfile ]]  && AMD64=${SOURCE}-linux-amd64
+          [[ -f linux-arm64.Dockerfile ]]  && ARM64=${SOURCE}-linux-arm64
+          [[ -f linux-arm-v7.Dockerfile ]] && ARMV7=${SOURCE}-linux-arm-v7
+          docker manifest create ${IMAGE}:${TAG}${BRANCH} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push   ${IMAGE}:${TAG}${BRANCH}
+          docker manifest create ${IMAGE}:${TAG}${BRANCH}-${VERSION//\~/-} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push   ${IMAGE}:${TAG}${BRANCH}-${VERSION//\~/-}
+          docker manifest create ${IMAGE}:${TAG}-${GITHUB_SHA:0:7} ${AMD64} ${ARM64} ${ARMV7}
+          docker manifest push   ${IMAGE}:${TAG}-${GITHUB_SHA:0:7}
+          if [[ ${TAG} == release ]]; then
+            docker manifest create ${IMAGE}:latest ${AMD64} ${ARM64} ${ARMV7}
+            docker manifest push   ${IMAGE}:latest
+          fi
+
+  notify:
+    runs-on: ubuntu-20.04
+    if: ${{ always() }}
+    needs: [build, publish]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.PERSONAL_TOKEN }}
+
+      - name: Take screenshot
+        if: "contains(needs.publish.result, 'success')"
+        run: |
+          if [[ -f puppeteer.js ]]; then
+            bash update.sh screenshot docker.io/${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7}
+          fi
+
+      - name: Send discord notification
+        if: "!contains(github.event.head_commit.message, 'skip ci')"
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          EXTRA_DISCORD_WEBHOOK: ${{ secrets.EXTRA_DISCORD_WEBHOOK }}
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          VERSION: ${{ needs.build.outputs.version }}
+          BRANCH: ${{ needs.build.outputs.branch }}
+          STATUS: ${{ needs.publish.result }}
+        shell: bash
+        run: |
+          export DOCKER_CLI_EXPERIMENTAL=enabled
+          [[ "${STATUS}" == "success" ]] && DIGESTS=$(docker manifest inspect docker.io/${GITHUB_REPOSITORY}:${GITHUB_REF//refs\/heads\//}-${GITHUB_SHA:0:7} | jq -r '.manifests[]  | "\(.digest | .[7:19]) \(.platform.os)/\(.platform.architecture)\(.platform.variant // "")"')
+          COMMIT_MESSAGE="$(curl -u "${GITHUB_OWNER}:${GITHUB_TOKEN}" -fsSL --retry 5 "https://api.github.com/repos/${GITHUB_REPOSITORY}/commits/${GITHUB_SHA}" | jq -r .commit.message | head -1)"
+          [[ "${STATUS}" == "success" ]] && COLOR="3066993"
+          CHANGELOG=$(jq -r '.changelog' < VERSION.json)
+          if [[ ${CHANGELOG} != null ]]; then
+            VERSION="[${VERSION:----}](${CHANGELOG})"
+          fi
+          if [[ ! -f "screenshot.png" ]]; then
+              curl -fsSL --retry 5 "https://hotio.dev/img/pullio-background.png" > screenshot.png
+          fi
+          json='{
+            "embeds": [
+              {
+                "title": "'${GITHUB_REPOSITORY}':'${GITHUB_REF//refs\/heads\//}${BRANCH}'",
+                "url": "https://github.com/'${GITHUB_REPOSITORY}'/actions/runs/'${GITHUB_RUN_ID}'",
+                "color": '${COLOR:-15158332}',
+                "fields": [
+                  {
+                    "name": "Commit Message",
+                    "value": "```'${COMMIT_MESSAGE//\"/\\\"}'```"
+                  },
+                  {
+                    "name": "Commit",
+                    "value": "['${GITHUB_SHA:0:7}'](https://github.com/'${GITHUB_REPOSITORY}'/commit/'${GITHUB_SHA}')",
+                    "inline": true
+                  },
+                  {
+                    "name": "Version",
+                    "value": "'${VERSION:----}'",
+                    "inline": true
+                  },
+                  {
+                    "name": "Digests",
+                    "value": "```'"$(echo "${DIGESTS:----}" | tr '\n' '#' | sed 's/#/\\n/g')"'```"
+                  }
+                ],
+                "footer": {
+                  "text": "Powered by GitHub Actions"
+                },
+                "timestamp": "'$(date -u +'%FT%T.%3NZ')'",
+                "image": {
+                  "url": "attachment://screenshot.png"
+                }
+              }
+            ]
+          }'
+          curl -fsSL --retry 5 -H "Content-Type: multipart/form-data" -F "file=@screenshot.png" -F "payload_json=${json}" "${DISCORD_WEBHOOK}" > /dev/null
+          if [[ -n ${EXTRA_DISCORD_WEBHOOK} ]]; then
+            curl -fsSL --retry 5 -H "Content-Type: multipart/form-data" -F "file=@screenshot.png" -F "payload_json=${json}" "${EXTRA_DISCORD_WEBHOOK}" > /dev/null
+          fi
+
+  tags:
+    runs-on: ubuntu-20.04
+    needs: [build, publish]
+    steps:
+      - name: Update tags.json
+        env:
+          GITHUB_OWNER: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+          VERSION: ${{ needs.build.outputs.version }}
+        shell: bash
+        run: |
+          git config --global user.email "${GITHUB_OWNER}@users.noreply.github.com"
+          git config --global user.name "${GITHUB_OWNER}"
+          git clone -b "master" "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" ${GITHUB_WORKSPACE}/master
+          cd ${GITHUB_WORKSPACE}/master || exit 1
+          ls -lah
+          if [[ -f ./tags.json ]]; then
+            json=$(cat ./tags.json)
+            jq '(.tags[] | select(.name == "'"${GITHUB_REF//refs\/heads\//}"'") | .version) |= "'"${VERSION//\~/-}"'"' <<< "${json}" > ./tags.json
+            json=$(cat ./tags.json)
+            jq '(.tags[] | select(.name == "'"${GITHUB_REF//refs\/heads\//}"'") | .lastUpdated) |= "'"$(date -u +'%FT%T.%3NZ')"'"' <<< "${json}" > ./tags.json
+            json=$(cat ./tags.json)
+            jq '(.tags[] | select(.name == "'"${GITHUB_REF//refs\/heads\//}"'") | .commit) |= "'"${GITHUB_SHA:0:7}"'"' <<< "${json}" > ./tags.json
+            git add .
+            if git commit -m ":${GITHUB_REF//refs\/heads\//} => [${VERSION//\~/-}, ${GITHUB_SHA:0:7}]"; then
+              git push
+            fi
+          fi
