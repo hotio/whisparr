@@ -1,6 +1,6 @@
 FROM cr.hotio.dev/hotio/base@sha256:a9cd4d01e0a106d07d8b1a239ece2c1f166c6f7a76740d6bbac2769a0a271392
 
-EXPOSE 9696
+EXPOSE 6969
 
 RUN apk add --no-cache libintl sqlite-libs icu-libs
 
