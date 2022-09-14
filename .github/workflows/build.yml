@@ -163,18 +163,7 @@ jobs:
           status=$?
           echo "Show docker logs..."
           docker logs service
-          docker logs service > test.log
           exit ${status}
-
-      - name: Upload log
-        if: |
-          contains(steps.arch_check.outputs.check, 'passed') &&
-          contains(steps.prep_test.outputs.check, 'passed') &&
-          contains(matrix.architecture, 'amd64')
-        uses: actions/upload-artifact@v3
-        with:
-          name: test.log
-          path: test.log
 
       - name: Take screenshot
         if: |
@@ -186,7 +175,6 @@ jobs:
           source: ${{ steps.prep_test.outputs.url }}
           destination: screenshot.png
           width: 1920
-          height: 1080
           full-page: true
 
   publish:
@@ -249,7 +237,7 @@ jobs:
       - name: Download screenshot
         uses: actions/download-artifact@v3
         with:
-          name: screenshot.png
+          name: screenshot
 
       - name: Send discord notification
         if: "!contains(github.event.head_commit.message, 'skip ci')"
