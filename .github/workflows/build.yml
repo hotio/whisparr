@@ -99,7 +99,7 @@ jobs:
 
       - name: Build and push
         if: "contains(steps.arch_check.outputs.check, 'passed')"
-        uses: Wandalen/wretry.action@v1
+        uses: Wandalen/wretry.action@v1.0.11
         with:
           action: docker/build-push-action@v2
           with: |
