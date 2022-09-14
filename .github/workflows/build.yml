@@ -99,29 +99,33 @@ jobs:
 
       - name: Build and push
         if: "contains(steps.arch_check.outputs.check, 'passed')"
-        uses: docker/build-push-action@v2
+        uses: Wandalen/wretry.action@v1
         with:
-          push: true
-          platforms: ${{ steps.prep.outputs.platform }}
-          file: ./${{ matrix.architecture }}.Dockerfile
-          cache-from: docker.io/${{ steps.prep.outputs.cache }}
-          cache-to: docker.io/${{ steps.prep.outputs.cache }}
-          tags: |
-            docker.io/${{ steps.prep.outputs.tag }}
-            ghcr.io/${{ steps.prep.outputs.tag }}
-          labels: |
-            org.opencontainers.image.created=${{ steps.prep.outputs.created }}
-            org.opencontainers.image.title=${{ steps.prep.outputs.title }}
-            org.opencontainers.image.revision=${{ steps.prep.outputs.revision }}
-            org.opencontainers.image.source=${{ steps.prep.outputs.source }}
-            org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
-            org.opencontainers.image.url=${{ steps.prep.outputs.url }}
-            org.opencontainers.image.version=${{ steps.prep.outputs.version }}
-          build-args: |
-            GITHUB_TOKEN=${{ secrets.PERSONAL_TOKEN }}
-            BUILD_ARCHITECTURE=${{ matrix.architecture }}
-            PACKAGE_VERSION=${{ steps.prep.outputs.package-version }}
-            ${{ steps.prep.outputs.build-args }}
+          action: docker/build-push-action@v2
+          with: |
+            push: true
+            platforms: ${{ steps.prep.outputs.platform }}
+            file: ./${{ matrix.architecture }}.Dockerfile
+            cache-from: docker.io/${{ steps.prep.outputs.cache }}
+            cache-to: docker.io/${{ steps.prep.outputs.cache }}
+            tags: |
+              docker.io/${{ steps.prep.outputs.tag }}
+              ghcr.io/${{ steps.prep.outputs.tag }}
+            labels: |
+              org.opencontainers.image.created=${{ steps.prep.outputs.created }}
+              org.opencontainers.image.title=${{ steps.prep.outputs.title }}
+              org.opencontainers.image.revision=${{ steps.prep.outputs.revision }}
+              org.opencontainers.image.source=${{ steps.prep.outputs.source }}
+              org.opencontainers.image.vendor=${{ steps.prep.outputs.vendor }}
+              org.opencontainers.image.url=${{ steps.prep.outputs.url }}
+              org.opencontainers.image.version=${{ steps.prep.outputs.version }}
+            build-args: |
+              GITHUB_TOKEN=${{ secrets.PERSONAL_TOKEN }}
+              BUILD_ARCHITECTURE=${{ matrix.architecture }}
+              PACKAGE_VERSION=${{ steps.prep.outputs.package-version }}
+              ${{ steps.prep.outputs.build-args }}
+          attempt_limit: 3
+          attempt_delay: 5000
 
       - name: Show installed packages
         if: |
