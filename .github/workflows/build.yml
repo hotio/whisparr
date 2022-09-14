@@ -155,6 +155,7 @@ jobs:
           contains(steps.prep_test.outputs.check, 'passed') &&
           contains(matrix.architecture, 'amd64')
         run: |
+          test_url=${{ steps.prep_test.outputs.url }}
           echo "Check if app works..."
           docker run --network host -d --name service "docker.io/${{ steps.prep.outputs.tag }}"
           currenttime=$(date +%s); maxtime=$((currenttime+60)); while (! curl -fsSL -b /dev/shm/cookie "${test_url}" > /dev/null) && [[ "$currenttime" -lt "$maxtime" ]]; do sleep 1; currenttime=$(date +%s); done
