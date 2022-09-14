@@ -144,7 +144,7 @@ jobs:
           test_url=$(jq -r '.test_url' <<< "${version_json}")
           if [[ ${test_url} != null ]]; then
             echo ::set-output name=url::${test_url}
-            echo ::set-output name=check::passed)
+            echo ::set-output name=check::passed
           else
             echo ::set-output name=check::failed
           fi
