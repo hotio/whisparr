@@ -1,6 +1,6 @@
 {
   "hide": true,
-  "version": "2.0.0.206",
+  "version": "2.0.0.207",
   "branch": "meta-v3",
   "upstream_image": "cr.hotio.dev/hotio/base",
   "upstream_tag": "alpine",
