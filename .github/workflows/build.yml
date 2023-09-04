@@ -311,7 +311,7 @@ jobs:
         env:
           GITHUB_OWNER: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-          REPO: ${{ github.action_repository }}
+          REPO: ${{ github.repository }}
           VERSION: ${{ needs.build.outputs.version }}
           BRANCH: ${{ needs.build.outputs.branch }}
         with:
