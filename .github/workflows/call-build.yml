@@ -2,6 +2,9 @@ name: call-build
 
 on:
   workflow_dispatch:
+  push:
+    branches-ignore:    
+      - 'master'
 
 jobs:
   call:
