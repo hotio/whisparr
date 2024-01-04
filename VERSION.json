@@ -2,11 +2,11 @@
   "latest": false,
   "hide": true,
   "description": "eros",
-  "version": "2.0.0.355",
+  "version": "3.0.0.358",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",
   "upstream_digest_amd64": "sha256:f1b248466c452da319278e86d8d69f53aea51243a067678a6d3796863cbb7a5e",
   "upstream_digest_arm64": "sha256:4d223f2c56314d3c7c50c96f0e44de8ec61f9e23250e54bd597fd0aaf0acb0ca",
   "test_url": "http://localhost:6969/system/status",
-  "sbranch": "nightly"
+  "sbranch": "eros"
 }
