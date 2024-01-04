@@ -1,6 +1,7 @@
 {
-  "latest": true,
-  "description": "nightly",
+  "latest": false,
+  "hide": true,
+  "description": "eros",
   "version": "2.0.0.355",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpine",

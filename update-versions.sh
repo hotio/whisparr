@@ -1,6 +1,6 @@
 #!/bin/bash
 
-branch="nightly"
+branch="eros"
 version=$(curl -fsSL "https://whisparr.servarr.com/v1/update/${branch}/changes?os=linuxmusl&runtime=netcore&arch=x64" | jq -r .[0].version)
 [[ -z ${version} ]] && exit 0
 [[ ${version} == "null" ]] && exit 0
