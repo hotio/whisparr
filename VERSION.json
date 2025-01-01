@@ -1,6 +1,6 @@
 {
   "description": "eros",
-  "hide": true,
+  "hide": false,
   "latest": false,
   "sbranch": "eros",
   "test_amd64": true,
