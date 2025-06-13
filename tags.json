@@ -11,6 +11,18 @@
       "nightly-32fb72f"
     ]
   },
+  "pr-plz12345-issuetemplate": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-06-13T03:41:19.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/15625877651",
+    "latest": false,
+    "tags": [
+      "pr-plz12345-issuetemplate",
+      "pr-plz12345-issuetemplate-2.0.0.1109",
+      "pr-plz12345-issuetemplate-1255cc4"
+    ]
+  },
   "pr-sonarr-pull-e17655c2": {
     "description": "",
     "hide": true,
