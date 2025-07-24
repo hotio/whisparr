@@ -11,6 +11,18 @@
       "nightly-033a65c"
     ]
   },
+  "pr-MetadataURL": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-07-24T05:42:59.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16488759143",
+    "latest": false,
+    "tags": [
+      "pr-MetadataURL",
+      "pr-MetadataURL-2.0.0.1166",
+      "pr-MetadataURL-e520f9e"
+    ]
+  },
   "pr-plz12345-issuetemplate": {
     "description": "",
     "hide": true,
