@@ -14,13 +14,13 @@
   "pr-MetadataURL": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-07-24T05:42:59.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16488759143",
+    "last_updated": "2025-07-24T21:50:02.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16508579732",
     "latest": false,
     "tags": [
       "pr-MetadataURL",
-      "pr-MetadataURL-2.0.0.1166",
-      "pr-MetadataURL-e520f9e"
+      "pr-MetadataURL-2.0.0.1170",
+      "pr-MetadataURL-d98885c"
     ]
   },
   "pr-plz12345-issuetemplate": {
