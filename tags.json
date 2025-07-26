@@ -35,6 +35,18 @@
       "pr-plz12345-issuetemplate-1255cc4"
     ]
   },
+  "pr-plz12345-patch-1": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-07-26T21:53:12.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16544217649",
+    "latest": false,
+    "tags": [
+      "pr-plz12345-patch-1",
+      "pr-plz12345-patch-1-2.0.0.1177",
+      "pr-plz12345-patch-1-86a00d9"
+    ]
+  },
   "pr-sonarr-pull-e17655c2": {
     "description": "",
     "hide": true,
