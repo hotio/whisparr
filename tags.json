@@ -26,13 +26,13 @@
   "pr-modify-indexer-searches": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-08-01T18:54:24.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16682850301",
+    "last_updated": "2025-08-01T20:37:57.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16684668961",
     "latest": false,
     "tags": [
       "pr-modify-indexer-searches",
-      "pr-modify-indexer-searches-2.0.0.1187",
-      "pr-modify-indexer-searches-0951eb5"
+      "pr-modify-indexer-searches-2.0.0.1188",
+      "pr-modify-indexer-searches-132c095"
     ]
   },
   "pr-plz12345-issuetemplate": {
