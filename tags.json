@@ -14,13 +14,13 @@
   "pr-Allow-Manual-Downloads-to-Void-Parser": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-08-03T11:43:52.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16704609590",
+    "last_updated": "2025-08-03T23:54:10.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16710802824",
     "latest": false,
     "tags": [
       "pr-Allow-Manual-Downloads-to-Void-Parser",
       "pr-Allow-Manual-Downloads-to-Void-Parser-2.0.0.1199",
-      "pr-Allow-Manual-Downloads-to-Void-Parser-3900c0e"
+      "pr-Allow-Manual-Downloads-to-Void-Parser-916b9c3"
     ]
   },
   "pr-EMP-parsing": {
