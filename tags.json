@@ -23,6 +23,18 @@
       "pr-Allow-Manual-Downloads-to-Void-Parser-3900c0e"
     ]
   },
+  "pr-EMP-parsing": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-08-03T22:14:26.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16709971240",
+    "latest": false,
+    "tags": [
+      "pr-EMP-parsing",
+      "pr-EMP-parsing-2.0.0.1202",
+      "pr-EMP-parsing-e1720fc"
+    ]
+  },
   "pr-MetadataURL": {
     "description": "",
     "hide": true,
