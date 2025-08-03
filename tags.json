@@ -35,6 +35,18 @@
       "pr-MetadataURL-d98885c"
     ]
   },
+  "pr-Update-Imagesharp": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-08-03T07:50:20.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16702705529",
+    "latest": false,
+    "tags": [
+      "pr-Update-Imagesharp",
+      "pr-Update-Imagesharp-2.0.0.1200",
+      "pr-Update-Imagesharp-d3c2cc1"
+    ]
+  },
   "pr-modify-indexer-searches": {
     "description": "",
     "hide": true,
