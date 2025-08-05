@@ -35,6 +35,18 @@
       "pr-EMP-parsing-e1720fc"
     ]
   },
+  "pr-Fix-multi-release-sites": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-08-05T21:35:13.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16761825139",
+    "latest": false,
+    "tags": [
+      "pr-Fix-multi-release-sites",
+      "pr-Fix-multi-release-sites-2.0.0.1217",
+      "pr-Fix-multi-release-sites-660e977"
+    ]
+  },
   "pr-MetadataURL": {
     "description": "",
     "hide": true,
