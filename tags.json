@@ -119,6 +119,18 @@
       "pr-plz12345-patch-1-86a00d9"
     ]
   },
+  "pr-search-results-css-fixes": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-08-05T23:53:36.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16763916989",
+    "latest": false,
+    "tags": [
+      "pr-search-results-css-fixes",
+      "pr-search-results-css-fixes-2.0.0.1219",
+      "pr-search-results-css-fixes-a1625a3"
+    ]
+  },
   "pr-sonarr-pull-e17655c2": {
     "description": "",
     "hide": true,
