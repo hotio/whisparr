@@ -38,13 +38,13 @@
   "pr-Fix-ENV-Variables": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-08-05T21:53:31.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16762135726",
+    "last_updated": "2025-08-06T01:03:55.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16764880723",
     "latest": false,
     "tags": [
       "pr-Fix-ENV-Variables",
       "pr-Fix-ENV-Variables-2.0.0.1216",
-      "pr-Fix-ENV-Variables-11751f9"
+      "pr-Fix-ENV-Variables-f0de9f2"
     ]
   },
   "pr-Fix-multi-release-sites": {
