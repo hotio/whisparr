@@ -158,13 +158,13 @@
   "v3": {
     "description": "eros",
     "hide": false,
-    "last_updated": "2025-08-08T04:15:40.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16821726182",
+    "last_updated": "2025-08-09T05:15:02.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16845798536",
     "latest": false,
     "tags": [
       "v3",
-      "v3-3.0.0.1230",
-      "v3-cebbcaf"
+      "v3-3.0.0.1233",
+      "v3-db54d11"
     ]
   }
 }
