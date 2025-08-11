@@ -59,6 +59,18 @@
       "pr-Fix-ENV-Variables-f0de9f2"
     ]
   },
+  "pr-Fix-Monitor-Status": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-08-11T21:41:33.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/16892822732",
+    "latest": false,
+    "tags": [
+      "pr-Fix-Monitor-Status",
+      "pr-Fix-Monitor-Status-2.0.0.1249",
+      "pr-Fix-Monitor-Status-246691b"
+    ]
+  },
   "pr-Fix-multi-release-sites": {
     "description": "",
     "hide": true,
