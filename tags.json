@@ -95,6 +95,18 @@
       "pr-MetadataURL-d98885c"
     ]
   },
+  "pr-Truncate-titles": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-08-28T04:36:32.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/17285887654",
+    "latest": false,
+    "tags": [
+      "pr-Truncate-titles",
+      "pr-Truncate-titles-2.0.0.1252",
+      "pr-Truncate-titles-4621638"
+    ]
+  },
   "pr-Update-Imagesharp": {
     "description": "",
     "hide": true,
