@@ -83,6 +83,18 @@
       "pr-Fix-multi-release-sites-660e977"
     ]
   },
+  "pr-JAV-Searching-and-Importing": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-09-12T16:13:42.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/17679918161",
+    "latest": false,
+    "tags": [
+      "pr-JAV-Searching-and-Importing",
+      "pr-JAV-Searching-and-Importing-2.0.0.1260",
+      "pr-JAV-Searching-and-Importing-c9ff96e"
+    ]
+  },
   "pr-MetadataURL": {
     "description": "",
     "hide": true,
