@@ -11,6 +11,18 @@
       "nightly-63294e6"
     ]
   },
+  "pr-Add-ExternID-Support": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-09-16T21:11:57.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/17779090235",
+    "latest": false,
+    "tags": [
+      "pr-Add-ExternID-Support",
+      "pr-Add-ExternID-Support-2.0.0.1272",
+      "pr-Add-ExternID-Support-b9da12c"
+    ]
+  },
   "pr-Allow-Manual-Downloads-to-Void-Parser": {
     "description": "",
     "hide": true,
