@@ -179,6 +179,18 @@
       "pr-Update-Imagesharp-d3c2cc1"
     ]
   },
+  "pr-add-parser-to-scene-index": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-10-22T04:19:45.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/18705200356",
+    "latest": false,
+    "tags": [
+      "pr-add-parser-to-scene-index",
+      "pr-add-parser-to-scene-index-3.0.1.1318",
+      "pr-add-parser-to-scene-index-0a97fc5"
+    ]
+  },
   "pr-modify-indexer-searches": {
     "description": "",
     "hide": true,
