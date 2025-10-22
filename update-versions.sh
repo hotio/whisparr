@@ -1,5 +1,5 @@
 #!/bin/bash
-branch=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/whisparr/whisparr/pulls?state=open&sort=updated&direction=desc" | jq -re '[sort_by(.updated_at) | .[] | select((.head.repo.full_name == "Whisparr/Whisparr") and (.head.ref | contains("dependabot") | not) and (.base.ref == "develop" or .base.ref == "eros")) | .head.ref][0]') || exit 1
+branch=$(curl -u "${GITHUB_ACTOR}:${GITHUB_TOKEN}" -fsSL "https://api.github.com/repos/whisparr/whisparr/pulls?state=open&sort=updated&direction=desc" | jq -re '[.[] | select((.head.repo.full_name == "Whisparr/Whisparr") and (.head.ref | contains("dependabot") | not) and (.base.ref == "develop" or .base.ref == "eros")) | .head.ref][0]') || exit 1
 version=$(curl -fsSL "https://whisparr.servarr.com/v1/update/${branch}/changes?os=linuxmusl&runtime=netcore&arch=x64" | jq -re '.[0].version') || exit 1
 curl -fsSL "https://whisparr.servarr.com/v1/update/${branch}/updatefile?version=${version}&os=linuxmusl&runtime=netcore&arch=x64" -o /dev/null || exit 1
 json=$(cat VERSION.json)
