@@ -191,6 +191,18 @@
       "pr-add-parser-to-scene-index-0a97fc5"
     ]
   },
+  "pr-import-relative-path-footer": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-10-29T00:59:04.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/18893682738",
+    "latest": false,
+    "tags": [
+      "pr-import-relative-path-footer",
+      "pr-import-relative-path-footer-3.0.1.1320",
+      "pr-import-relative-path-footer-66e577b"
+    ]
+  },
   "pr-modify-indexer-searches": {
     "description": "",
     "hide": true,
