@@ -263,6 +263,18 @@
       "pr-search-results-css-fixes-a1625a3"
     ]
   },
+  "pr-sonarr-knownnetworks": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-10-31T20:16:15.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/18984082271",
+    "latest": false,
+    "tags": [
+      "pr-sonarr-knownnetworks",
+      "pr-sonarr-knownnetworks-3.0.1.1325",
+      "pr-sonarr-knownnetworks-6be7e86"
+    ]
+  },
   "pr-sonarr-pull-e17655c2": {
     "description": "",
     "hide": true,
