@@ -215,6 +215,18 @@
       "pr-import-relative-path-footer-66e577b"
     ]
   },
+  "pr-mac-build-image-upgrade": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-05T21:13:29.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19116433746",
+    "latest": false,
+    "tags": [
+      "pr-mac-build-image-upgrade",
+      "pr-mac-build-image-upgrade-3.0.1.1335",
+      "pr-mac-build-image-upgrade-8bd2d9f"
+    ]
+  },
   "pr-modify-indexer-searches": {
     "description": "",
     "hide": true,
