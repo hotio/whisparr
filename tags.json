@@ -263,6 +263,18 @@
       "pr-plz12345-patch-1-86a00d9"
     ]
   },
+  "pr-qbt-auth-check-fix": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-06T06:52:36.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19127339741",
+    "latest": false,
+    "tags": [
+      "pr-qbt-auth-check-fix",
+      "pr-qbt-auth-check-fix-3.0.1.1339",
+      "pr-qbt-auth-check-fix-830d2bf"
+    ]
+  },
   "pr-scen-import-table-sorting": {
     "description": "",
     "hide": true,
