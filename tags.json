@@ -263,6 +263,18 @@
       "pr-plz12345-patch-1-86a00d9"
     ]
   },
+  "pr-scen-import-table-sorting": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-06T04:55:16.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19125230961",
+    "latest": false,
+    "tags": [
+      "pr-scen-import-table-sorting",
+      "pr-scen-import-table-sorting-3.0.1.1337",
+      "pr-scen-import-table-sorting-03b6caa"
+    ]
+  },
   "pr-search-results-css-fixes": {
     "description": "",
     "hide": true,
