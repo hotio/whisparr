@@ -239,6 +239,18 @@
       "pr-modify-indexer-searches-132c095"
     ]
   },
+  "pr-performersother-token": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-06T18:52:02.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19146413439",
+    "latest": false,
+    "tags": [
+      "pr-performersother-token",
+      "pr-performersother-token-3.0.1.1341",
+      "pr-performersother-token-c3f2e10"
+    ]
+  },
   "pr-plz12345-issuetemplate": {
     "description": "",
     "hide": true,
