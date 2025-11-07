@@ -227,6 +227,18 @@
       "pr-mac-build-image-upgrade-8bd2d9f"
     ]
   },
+  "pr-media-naming-help-refactor": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-07T04:22:20.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19158086758",
+    "latest": false,
+    "tags": [
+      "pr-media-naming-help-refactor",
+      "pr-media-naming-help-refactor-3.0.1.1347",
+      "pr-media-naming-help-refactor-36c3af9"
+    ]
+  },
   "pr-modify-indexer-searches": {
     "description": "",
     "hide": true,
