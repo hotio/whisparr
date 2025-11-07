@@ -335,6 +335,18 @@
       "pr-sonarr-pull-e17655c2-a0d610a"
     ]
   },
+  "pr-unmapped-files-sort-fix": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-07T02:28:34.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19156216717",
+    "latest": false,
+    "tags": [
+      "pr-unmapped-files-sort-fix",
+      "pr-unmapped-files-sort-fix-3.0.1.1346",
+      "pr-unmapped-files-sort-fix-2f6a4e0"
+    ]
+  },
   "v3": {
     "description": "eros",
     "hide": false,
