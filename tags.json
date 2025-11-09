@@ -59,6 +59,18 @@
       "pr-EMP-parsing-e1720fc"
     ]
   },
+  "pr-Fix--TMDb-company-import-list-empty-results": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-09T07:36:32.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19205278899",
+    "latest": false,
+    "tags": [
+      "pr-Fix--TMDb-company-import-list-empty-results",
+      "pr-Fix--TMDb-company-import-list-empty-results-3.0.1.1350",
+      "pr-Fix--TMDb-company-import-list-empty-results-a098b13"
+    ]
+  },
   "pr-Fix-Approved-Releases-First": {
     "description": "",
     "hide": true,
