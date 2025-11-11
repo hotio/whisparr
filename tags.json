@@ -275,6 +275,18 @@
       "pr-november-2025-radarr-upstream-picks-1-f2bde3c"
     ]
   },
+  "pr-november-2025-radarr-upstream-picks-2": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-11T18:49:58.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19275431989",
+    "latest": false,
+    "tags": [
+      "pr-november-2025-radarr-upstream-picks-2",
+      "pr-november-2025-radarr-upstream-picks-2-3.0.2.1356",
+      "pr-november-2025-radarr-upstream-picks-2-71aec8d"
+    ]
+  },
   "pr-performersother-token": {
     "description": "",
     "hide": true,
