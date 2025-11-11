@@ -383,6 +383,18 @@
       "pr-sonarr-pull-e17655c2-a0d610a"
     ]
   },
+  "pr-suppress-warnings-for-recent-API-changes": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-11T22:34:09.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19280324593",
+    "latest": false,
+    "tags": [
+      "pr-suppress-warnings-for-recent-API-changes",
+      "pr-suppress-warnings-for-recent-API-changes-3.0.2.1357",
+      "pr-suppress-warnings-for-recent-API-changes-6df6b26"
+    ]
+  },
   "pr-unmapped-files-sort-fix": {
     "description": "",
     "hide": true,
