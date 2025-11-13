@@ -218,13 +218,13 @@
   "pr-import-list-form-movie-year-fix": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-11-13T04:40:31.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19320703105",
+    "last_updated": "2025-11-13T19:50:35.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19343907865",
     "latest": false,
     "tags": [
       "pr-import-list-form-movie-year-fix",
       "pr-import-list-form-movie-year-fix-3.0.2.1367",
-      "pr-import-list-form-movie-year-fix-f143853"
+      "pr-import-list-form-movie-year-fix-f3742ed"
     ]
   },
   "pr-import-relative-path-footer": {
