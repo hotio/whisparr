@@ -302,13 +302,13 @@
   "pr-november-radarr-upstream-cherry-picks": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-11-13T19:36:53.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19343556928",
+    "last_updated": "2025-11-13T21:30:55.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19346389886",
     "latest": false,
     "tags": [
       "pr-november-radarr-upstream-cherry-picks",
       "pr-november-radarr-upstream-cherry-picks-3.0.2.1372",
-      "pr-november-radarr-upstream-cherry-picks-bc46ccd"
+      "pr-november-radarr-upstream-cherry-picks-f3df274"
     ]
   },
   "pr-performersother-token": {
