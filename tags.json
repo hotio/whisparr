@@ -314,13 +314,13 @@
   "pr-november-cherry-5": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-11-15T03:30:31.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19383736855",
+    "last_updated": "2025-11-16T13:50:10.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19406597529",
     "latest": false,
     "tags": [
       "pr-november-cherry-5",
-      "pr-november-cherry-5-3.0.2.1378",
-      "pr-november-cherry-5-9107ed2"
+      "pr-november-cherry-5-3.0.2.1382",
+      "pr-november-cherry-5-b51b640"
     ]
   },
   "pr-november-radarr-upstream-cherry-picks": {
