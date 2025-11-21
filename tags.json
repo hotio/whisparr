@@ -203,6 +203,18 @@
       "pr-add-parser-to-scene-index-0a97fc5"
     ]
   },
+  "pr-import-list-exclusion-pagination": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-21T03:33:26.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19559028672",
+    "latest": false,
+    "tags": [
+      "pr-import-list-exclusion-pagination",
+      "pr-import-list-exclusion-pagination-3.0.2.1409",
+      "pr-import-list-exclusion-pagination-3574e13"
+    ]
+  },
   "pr-import-list-exclusion-sorting": {
     "description": "",
     "hide": true,
