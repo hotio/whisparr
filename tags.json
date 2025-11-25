@@ -419,6 +419,18 @@
       "pr-november-radarr-upstream-cherry-picks-84a20da"
     ]
   },
+  "pr-parser-addition": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-25T07:16:37.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19661383150",
+    "latest": false,
+    "tags": [
+      "pr-parser-addition",
+      "pr-parser-addition-3.0.2.1451",
+      "pr-parser-addition-6d2a4cb"
+    ]
+  },
   "pr-performersother-token": {
     "description": "",
     "hide": true,
