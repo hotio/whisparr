@@ -395,6 +395,18 @@
       "pr-november-radarr-upstream-13-fac739c"
     ]
   },
+  "pr-november-radarr-upstream-14": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-26T10:17:45.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19700196701",
+    "latest": false,
+    "tags": [
+      "pr-november-radarr-upstream-14",
+      "pr-november-radarr-upstream-14-3.0.2.1458",
+      "pr-november-radarr-upstream-14-0d4ba76"
+    ]
+  },
   "pr-november-radarr-upstream-8": {
     "description": "",
     "hide": true,
