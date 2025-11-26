@@ -386,13 +386,13 @@
   "pr-november-radarr-upstream-13": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-11-25T14:15:47.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19672501097",
+    "last_updated": "2025-11-26T04:05:00.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19692087338",
     "latest": false,
     "tags": [
       "pr-november-radarr-upstream-13",
       "pr-november-radarr-upstream-13-3.0.2.1453",
-      "pr-november-radarr-upstream-13-5c07742"
+      "pr-november-radarr-upstream-13-fac739c"
     ]
   },
   "pr-november-radarr-upstream-8": {
