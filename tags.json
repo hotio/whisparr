@@ -203,6 +203,18 @@
       "pr-add-parser-to-scene-index-0a97fc5"
     ]
   },
+  "pr-fix-image-loading": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-27T15:15:12.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19740744342",
+    "latest": false,
+    "tags": [
+      "pr-fix-image-loading",
+      "pr-fix-image-loading-3.0.2.1467",
+      "pr-fix-image-loading-63fa91e"
+    ]
+  },
   "pr-fix-scene-filter-by-studio": {
     "description": "",
     "hide": true,
