@@ -551,6 +551,18 @@
       "pr-qbt-auth-check-fix-830d2bf"
     ]
   },
+  "pr-remove-linux-x86": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-11-28T19:35:49.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19772473609",
+    "latest": false,
+    "tags": [
+      "pr-remove-linux-x86",
+      "pr-remove-linux-x86-3.0.2.1477",
+      "pr-remove-linux-x86-09c2e9d"
+    ]
+  },
   "pr-scen-import-table-sorting": {
     "description": "",
     "hide": true,
