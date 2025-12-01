@@ -203,6 +203,18 @@
       "pr-add-parser-to-scene-index-0a97fc5"
     ]
   },
+  "pr-december-radarr-upstream-1": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-01T21:50:37.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19838645625",
+    "latest": false,
+    "tags": [
+      "pr-december-radarr-upstream-1",
+      "pr-december-radarr-upstream-1-3.0.2.1508",
+      "pr-december-radarr-upstream-1-09dac35"
+    ]
+  },
   "pr-fix-image-loading": {
     "description": "",
     "hide": true,
