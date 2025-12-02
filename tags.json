@@ -227,6 +227,18 @@
       "pr-fix-image-loading-63fa91e"
     ]
   },
+  "pr-fix-performer-refresh": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-02T08:53:08.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19852618238",
+    "latest": false,
+    "tags": [
+      "pr-fix-performer-refresh",
+      "pr-fix-performer-refresh-3.0.2.1516",
+      "pr-fix-performer-refresh-a12112d"
+    ]
+  },
   "pr-fix-scene-filter-by-studio": {
     "description": "",
     "hide": true,
