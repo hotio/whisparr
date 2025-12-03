@@ -47,6 +47,18 @@
       "pr-Allow-search-by-external-ID-26f3859"
     ]
   },
+  "pr-December-Radarr-upstream-4": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-03T02:46:21.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19880548843",
+    "latest": false,
+    "tags": [
+      "pr-December-Radarr-upstream-4",
+      "pr-December-Radarr-upstream-4-3.0.2.1519",
+      "pr-December-Radarr-upstream-4-3549e11"
+    ]
+  },
   "pr-EMP-parsing": {
     "description": "",
     "hide": true,
