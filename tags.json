@@ -251,6 +251,18 @@
       "pr-fix-import-list-card-c9b84ec"
     ]
   },
+  "pr-fix-import-select-movie-performance": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-03T22:16:00.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19910553113",
+    "latest": false,
+    "tags": [
+      "pr-fix-import-select-movie-performance",
+      "pr-fix-import-select-movie-performance-3.0.2.1521",
+      "pr-fix-import-select-movie-performance-bc49459"
+    ]
+  },
   "pr-fix-performer-refresh": {
     "description": "",
     "hide": true,
