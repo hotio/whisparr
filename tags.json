@@ -263,6 +263,18 @@
       "pr-fix-import-select-movie-performance-bc49459"
     ]
   },
+  "pr-fix-modal-search-app-state": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-04T03:46:48.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19916921293",
+    "latest": false,
+    "tags": [
+      "pr-fix-modal-search-app-state",
+      "pr-fix-modal-search-app-state-3.0.2.1525",
+      "pr-fix-modal-search-app-state-a2f3d6d"
+    ]
+  },
   "pr-fix-performer-refresh": {
     "description": "",
     "hide": true,
