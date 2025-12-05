@@ -299,6 +299,18 @@
       "pr-fix-modal-search-app-state-a2f3d6d"
     ]
   },
+  "pr-fix-parser-large-resolutions": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-05T16:17:59.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19968916218",
+    "latest": false,
+    "tags": [
+      "pr-fix-parser-large-resolutions",
+      "pr-fix-parser-large-resolutions-3.0.2.1551",
+      "pr-fix-parser-large-resolutions-9ec4045"
+    ]
+  },
   "pr-fix-performer-refresh": {
     "description": "",
     "hide": true,
