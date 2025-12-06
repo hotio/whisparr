@@ -302,13 +302,13 @@
   "pr-fix-parser-large-resolutions": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-12-05T18:46:57.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19972693461",
+    "last_updated": "2025-12-06T07:50:00.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/19985488604",
     "latest": false,
     "tags": [
       "pr-fix-parser-large-resolutions",
-      "pr-fix-parser-large-resolutions-3.0.2.1552",
-      "pr-fix-parser-large-resolutions-d08f125"
+      "pr-fix-parser-large-resolutions-3.0.2.1563",
+      "pr-fix-parser-large-resolutions-73248b4"
     ]
   },
   "pr-fix-performer-refresh": {
