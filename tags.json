@@ -383,6 +383,18 @@
       "pr-import-relative-path-footer-66e577b"
     ]
   },
+  "pr-localization": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-08T17:53:25.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20037554709",
+    "latest": false,
+    "tags": [
+      "pr-localization",
+      "pr-localization-3.0.2.1605",
+      "pr-localization-bc1625a"
+    ]
+  },
   "pr-mac-build-image-upgrade": {
     "description": "",
     "hide": true,
