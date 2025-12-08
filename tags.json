@@ -455,6 +455,18 @@
       "pr-modify-indexer-searches-132c095"
     ]
   },
+  "pr-movieimage-fallback-hardening": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-08T21:14:30.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20042964663",
+    "latest": false,
+    "tags": [
+      "pr-movieimage-fallback-hardening",
+      "pr-movieimage-fallback-hardening-3.0.2.1610",
+      "pr-movieimage-fallback-hardening-eb921b3"
+    ]
+  },
   "pr-november-2025-radarr-upstream-picks-1": {
     "description": "",
     "hide": true,
