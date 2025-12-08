@@ -299,6 +299,18 @@
       "pr-fix-modal-search-app-state-a2f3d6d"
     ]
   },
+  "pr-fix-movie-progress-bar-downloading-status": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-08T19:40:18.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20040505057",
+    "latest": false,
+    "tags": [
+      "pr-fix-movie-progress-bar-downloading-status",
+      "pr-fix-movie-progress-bar-downloading-status-3.0.2.1606",
+      "pr-fix-movie-progress-bar-downloading-status-e1ea157"
+    ]
+  },
   "pr-fix-parser-large-resolutions": {
     "description": "",
     "hide": true,
