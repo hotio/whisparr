@@ -806,13 +806,13 @@
   "v3": {
     "description": "eros",
     "hide": false,
-    "last_updated": "2025-12-09T01:00:27.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20048122818",
+    "last_updated": "2025-12-09T04:57:28.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20052413822",
     "latest": false,
     "tags": [
       "v3",
-      "v3-3.0.2.1613",
-      "v3-2d45657"
+      "v3-3.0.2.1618",
+      "v3-77f218f"
     ]
   }
 }
