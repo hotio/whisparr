@@ -1,5 +1,5 @@
 {
-  "branch": "prgress-bar-fixes",
+  "branch": "search-tweaks",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:80c1aed4ee78f3e9da3418b1648e1d134d33e10d098e7991a574c1827044768b",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "3.0.2.1624"
+  "version": "3.0.2.1635"
 }
