@@ -827,6 +827,18 @@
       "pr-sonarr-pull-e17655c2-a0d610a"
     ]
   },
+  "pr-sqlite-bug": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-12T06:55:13.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20158880856",
+    "latest": false,
+    "tags": [
+      "pr-sqlite-bug",
+      "pr-sqlite-bug-2.0.0.1663",
+      "pr-sqlite-bug-28458b9"
+    ]
+  },
   "pr-suppress-warnings-for-recent-API-changes": {
     "description": "",
     "hide": true,
