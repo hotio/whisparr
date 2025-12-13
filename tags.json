@@ -863,6 +863,18 @@
       "pr-unmapped-files-sort-fix-8d850cf"
     ]
   },
+  "pr-update-performer-search": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-13T00:58:52.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20184187584",
+    "latest": false,
+    "tags": [
+      "pr-update-performer-search",
+      "pr-update-performer-search-2.0.0.1675",
+      "pr-update-performer-search-f6b22c9"
+    ]
+  },
   "v3": {
     "description": "eros",
     "hide": false,
