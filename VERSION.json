@@ -1,5 +1,5 @@
 {
-  "branch": "sqlite-bug",
+  "branch": "update-performer-search",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:5f5d6775ce10eeae54e514d3a21db321985cbc21d9a6e79defa69645acbdc583",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "2.0.0.1663"
+  "version": "2.0.0.1675"
 }
