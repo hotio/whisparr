@@ -134,13 +134,13 @@
   "pr-JAV-Import-Parser-Updates": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-12-13T18:18:07.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20195958527",
+    "last_updated": "2025-12-13T18:54:38.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20196384586",
     "latest": false,
     "tags": [
       "pr-JAV-Import-Parser-Updates",
-      "pr-JAV-Import-Parser-Updates-2.0.0.1678",
-      "pr-JAV-Import-Parser-Updates-510faec"
+      "pr-JAV-Import-Parser-Updates-2.0.0.1684",
+      "pr-JAV-Import-Parser-Updates-a439cf7"
     ]
   },
   "pr-JAV-Searching-and-Importing": {
