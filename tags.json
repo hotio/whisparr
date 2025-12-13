@@ -2,13 +2,13 @@
   "nightly": {
     "description": "nightly",
     "hide": false,
-    "last_updated": "2025-12-13T06:20:12.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20188057781",
+    "last_updated": "2025-12-13T09:36:40.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20190073240",
     "latest": true,
     "tags": [
       "nightly",
       "nightly-2.0.0.1679",
-      "nightly-600ddbb"
+      "nightly-0a1d1ad"
     ]
   },
   "pr-Add-ExternID-Support": {
