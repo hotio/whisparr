@@ -878,13 +878,13 @@
   "pr-update-performer-search": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-12-13T00:58:52.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20184187584",
+    "last_updated": "2025-12-13T19:26:07.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20196752095",
     "latest": false,
     "tags": [
       "pr-update-performer-search",
       "pr-update-performer-search-2.0.0.1675",
-      "pr-update-performer-search-f6b22c9"
+      "pr-update-performer-search-c06301b"
     ]
   },
   "v3": {
