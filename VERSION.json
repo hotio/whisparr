@@ -1,5 +1,5 @@
 {
-  "branch": "mass-download-bug",
+  "branch": "modify-season-search",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:083dcc449632f9a0279591c95398163452b095ca225907598273c197b85ca2ef",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "2.0.0.1697"
+  "version": "2.0.0.1702"
 }
