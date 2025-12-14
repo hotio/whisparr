@@ -443,6 +443,18 @@
       "pr-mac-build-image-upgrade-8bd2d9f"
     ]
   },
+  "pr-mass-download-bug": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-14T07:42:14.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20204744243",
+    "latest": false,
+    "tags": [
+      "pr-mass-download-bug",
+      "pr-mass-download-bug-2.0.0.1697",
+      "pr-mass-download-bug-b838fca"
+    ]
+  },
   "pr-media-naming-help-refactor": {
     "description": "",
     "hide": true,
