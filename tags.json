@@ -791,6 +791,18 @@
       "pr-qbt-auth-check-fix-830d2bf"
     ]
   },
+  "pr-remonitor-changes": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-14T23:30:58.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20215829401",
+    "latest": false,
+    "tags": [
+      "pr-remonitor-changes",
+      "pr-remonitor-changes-2.0.0.1703",
+      "pr-remonitor-changes-83c1073"
+    ]
+  },
   "pr-remove-linux-x86": {
     "description": "",
     "hide": true,
