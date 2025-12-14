@@ -1,5 +1,5 @@
 {
-  "branch": "update-performer-search",
+  "branch": "mass-download-bug",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:a42533086f845cfe49019a1fce2445fddd08e384055a3ce982cc4137a7314c29",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "2.0.0.1675"
+  "version": "2.0.0.1697"
 }
