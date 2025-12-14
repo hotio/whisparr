@@ -491,6 +491,18 @@
       "pr-modify-indexer-searches-132c095"
     ]
   },
+  "pr-modify-season-search": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-14T22:49:44.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20215335137",
+    "latest": false,
+    "tags": [
+      "pr-modify-season-search",
+      "pr-modify-season-search-2.0.0.1702",
+      "pr-modify-season-search-98dd5d0"
+    ]
+  },
   "pr-movieimage-fallback-hardening": {
     "description": "",
     "hide": true,
