@@ -1,5 +1,5 @@
 {
-  "branch": "remonitor-changes",
+  "branch": "More-Season-Search-Changes",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:8c98dfbd578009bf168b067ba6b9da80d6107f865b920962162904c338fe89cd",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "2.0.0.1703"
+  "version": "2.0.0.1715"
 }
