@@ -167,6 +167,18 @@
       "pr-MetadataURL-d98885c"
     ]
   },
+  "pr-More-Season-Search-Changes": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-15T04:53:51.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20220888429",
+    "latest": false,
+    "tags": [
+      "pr-More-Season-Search-Changes",
+      "pr-More-Season-Search-Changes-2.0.0.1715",
+      "pr-More-Season-Search-Changes-41148c2"
+    ]
+  },
   "pr-Parse-and-import-by-External-ID": {
     "description": "",
     "hide": true,
