@@ -323,6 +323,18 @@
       "pr-fix-changelog-linking-e8e2b0d"
     ]
   },
+  "pr-fix-external-id-import": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-17T20:54:56.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20316911411",
+    "latest": false,
+    "tags": [
+      "pr-fix-external-id-import",
+      "pr-fix-external-id-import-2.0.0.1743",
+      "pr-fix-external-id-import-9b63673"
+    ]
+  },
   "pr-fix-image-loading": {
     "description": "",
     "hide": true,
