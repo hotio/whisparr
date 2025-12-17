@@ -203,6 +203,18 @@
       "pr-Parse-and-import-by-External-ID-00363a1"
     ]
   },
+  "pr-Refresh-sites-oldest-to-newest": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-17T20:40:30.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20316568431",
+    "latest": false,
+    "tags": [
+      "pr-Refresh-sites-oldest-to-newest",
+      "pr-Refresh-sites-oldest-to-newest-2.0.0.1744",
+      "pr-Refresh-sites-oldest-to-newest-e3af555"
+    ]
+  },
   "pr-Trunc-long-titles": {
     "description": "",
     "hide": true,
