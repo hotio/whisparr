@@ -323,6 +323,18 @@
       "pr-december-radarr-upstream-8-7af3a45"
     ]
   },
+  "pr-december-radarr-upstream-9": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-19T01:01:17.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20356233282",
+    "latest": false,
+    "tags": [
+      "pr-december-radarr-upstream-9",
+      "pr-december-radarr-upstream-9-3.0.2.1756",
+      "pr-december-radarr-upstream-9-a65c0c7"
+    ]
+  },
   "pr-existing-scene-shows-as-downloading": {
     "description": "",
     "hide": true,
