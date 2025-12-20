@@ -338,13 +338,13 @@
   "pr-disable-sentry": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-12-19T20:53:05.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20382224728",
+    "last_updated": "2025-12-20T03:38:22.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20388562080",
     "latest": false,
     "tags": [
       "pr-disable-sentry",
       "pr-disable-sentry-3.0.2.1757",
-      "pr-disable-sentry-2a0bbbc"
+      "pr-disable-sentry-7e9b252"
     ]
   },
   "pr-existing-scene-shows-as-downloading": {
