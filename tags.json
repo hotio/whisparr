@@ -275,6 +275,18 @@
       "pr-december-radarr-upstream-1-09dac35"
     ]
   },
+  "pr-december-radarr-upstream-11": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-21T06:21:54.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20405802644",
+    "latest": false,
+    "tags": [
+      "pr-december-radarr-upstream-11",
+      "pr-december-radarr-upstream-11-3.0.2.1767",
+      "pr-december-radarr-upstream-11-03a86be"
+    ]
+  },
   "pr-december-radarr-upstream-4": {
     "description": "",
     "hide": true,
