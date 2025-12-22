@@ -1,5 +1,5 @@
 {
-  "branch": "december-radarr-upstream-12",
+  "branch": "december-radarr-upstream-14",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:abe2401c29693cf1b2198e509d8c362cc2f4b484fb2e6f65ed23288007d04eb9",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "3.0.2.1773"
+  "version": "3.0.2.1787"
 }
