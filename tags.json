@@ -539,6 +539,18 @@
       "pr-fix-scene-filter-by-studio-17ce103"
     ]
   },
+  "pr-housekeeping": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-23T22:52:31.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20473359703",
+    "latest": false,
+    "tags": [
+      "pr-housekeeping",
+      "pr-housekeeping-3.0.2.1821",
+      "pr-housekeeping-9d087b1"
+    ]
+  },
   "pr-import-list-exclusion-pagination": {
     "description": "",
     "hide": true,
