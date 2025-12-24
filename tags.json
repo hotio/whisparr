@@ -1091,6 +1091,18 @@
       "pr-suppress-warnings-for-recent-API-changes-6df6b26"
     ]
   },
+  "pr-typescript-form-components": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-24T09:20:04.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20482899262",
+    "latest": false,
+    "tags": [
+      "pr-typescript-form-components",
+      "pr-typescript-form-components-3.0.2.1826",
+      "pr-typescript-form-components-ef2ae04"
+    ]
+  },
   "pr-unmapped-files-sort-fix": {
     "description": "",
     "hide": true,
