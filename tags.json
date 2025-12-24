@@ -503,6 +503,18 @@
       "pr-fix-movie-progress-bar-downloading-status-e1ea157"
     ]
   },
+  "pr-fix-page-load-failure": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-24T20:16:22.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20493228387",
+    "latest": false,
+    "tags": [
+      "pr-fix-page-load-failure",
+      "pr-fix-page-load-failure-3.0.2.1829",
+      "pr-fix-page-load-failure-7c669b4"
+    ]
+  },
   "pr-fix-parser-large-resolutions": {
     "description": "",
     "hide": true,
