@@ -503,6 +503,18 @@
       "pr-fix-modal-search-app-state-a2f3d6d"
     ]
   },
+  "pr-fix-move-movie-modal-localizations": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-25T08:21:04.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20501865849",
+    "latest": false,
+    "tags": [
+      "pr-fix-move-movie-modal-localizations",
+      "pr-fix-move-movie-modal-localizations-3.0.2.1835",
+      "pr-fix-move-movie-modal-localizations-7270ef9"
+    ]
+  },
   "pr-fix-movie-progress-bar-downloading-status": {
     "description": "",
     "hide": true,
