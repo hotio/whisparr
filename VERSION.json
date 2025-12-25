@@ -1,5 +1,5 @@
 {
-  "branch": "fix-move-movie-modal-localizations",
+  "branch": "december-radarr-upstream-19",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:579e75e256ea1541b949a6bf441591d02c16dd13aed263a749a9bbad00b549c8",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "3.0.2.1835"
+  "version": "3.0.2.1833"
 }
