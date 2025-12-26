@@ -491,6 +491,18 @@
       "pr-fix-import-select-movie-performance-bc49459"
     ]
   },
+  "pr-fix-input-select-issues": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-26T17:33:45.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20526564363",
+    "latest": false,
+    "tags": [
+      "pr-fix-input-select-issues",
+      "pr-fix-input-select-issues-3.0.2.1851",
+      "pr-fix-input-select-issues-6a9c1a5"
+    ]
+  },
   "pr-fix-modal-search-app-state": {
     "description": "",
     "hide": true,
