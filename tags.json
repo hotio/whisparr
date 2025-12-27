@@ -683,6 +683,18 @@
       "pr-mac-build-image-upgrade-8bd2d9f"
     ]
   },
+  "pr-manual-build-push": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-27T03:54:18.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20533942005",
+    "latest": false,
+    "tags": [
+      "pr-manual-build-push",
+      "pr-manual-build-push-3.0.2.1860",
+      "pr-manual-build-push-f98c45a"
+    ]
+  },
   "pr-mass-download-bug": {
     "description": "",
     "hide": true,
