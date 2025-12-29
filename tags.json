@@ -1007,6 +1007,18 @@
       "pr-parser-addition-6d2a4cb"
     ]
   },
+  "pr-parser-fix": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-29T10:46:25.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20570972876",
+    "latest": false,
+    "tags": [
+      "pr-parser-fix",
+      "pr-parser-fix-3.0.2.1891",
+      "pr-parser-fix-a093cee"
+    ]
+  },
   "pr-performersother-token": {
     "description": "",
     "hide": true,
