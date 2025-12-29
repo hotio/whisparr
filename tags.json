@@ -1055,6 +1055,18 @@
       "pr-qbt-auth-check-fix-830d2bf"
     ]
   },
+  "pr-radarr-december-upstream-22": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-29T03:19:00.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20563863848",
+    "latest": false,
+    "tags": [
+      "pr-radarr-december-upstream-22",
+      "pr-radarr-december-upstream-22-3.0.2.1889",
+      "pr-radarr-december-upstream-22-2f5b234"
+    ]
+  },
   "pr-radarr-upstream-10": {
     "description": "",
     "hide": true,
