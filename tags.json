@@ -815,6 +815,18 @@
       "pr-modify-season-search-98dd5d0"
     ]
   },
+  "pr-movie-cast-posters-typescript": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-30T16:51:22.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20601455968",
+    "latest": false,
+    "tags": [
+      "pr-movie-cast-posters-typescript",
+      "pr-movie-cast-posters-typescript-3.0.2.1921",
+      "pr-movie-cast-posters-typescript-3de5780"
+    ]
+  },
   "pr-movieimage-fallback-hardening": {
     "description": "",
     "hide": true,
