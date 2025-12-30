@@ -647,6 +647,18 @@
       "pr-fix-scene-filter-by-studio-17ce103"
     ]
   },
+  "pr-fix-search": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-30T14:56:44.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20599264532",
+    "latest": false,
+    "tags": [
+      "pr-fix-search",
+      "pr-fix-search-3.0.2.1920",
+      "pr-fix-search-1d27e69"
+    ]
+  },
   "pr-housekeeping": {
     "description": "",
     "hide": true,
