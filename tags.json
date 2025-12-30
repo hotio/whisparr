@@ -1058,13 +1058,13 @@
   "pr-parser-fix": {
     "description": "",
     "hide": true,
-    "last_updated": "2025-12-30T09:46:38.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20593647296",
+    "last_updated": "2025-12-30T17:53:19.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20602574500",
     "latest": false,
     "tags": [
       "pr-parser-fix",
       "pr-parser-fix-3.0.2.1918",
-      "pr-parser-fix-f74cf9e"
+      "pr-parser-fix-1bed166"
     ]
   },
   "pr-performersother-token": {
