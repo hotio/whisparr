@@ -263,6 +263,18 @@
       "pr-add-parser-to-scene-index-0a97fc5"
     ]
   },
+  "pr-codeql-logging-fix": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-31T04:36:37.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20612127259",
+    "latest": false,
+    "tags": [
+      "pr-codeql-logging-fix",
+      "pr-codeql-logging-fix-2.0.0.1939",
+      "pr-codeql-logging-fix-59275bd"
+    ]
+  },
   "pr-december-radarr-upstream-1": {
     "description": "",
     "hide": true,
