@@ -1,5 +1,5 @@
 {
-  "branch": "codeql-logging-fix",
+  "branch": "release-push-improvement",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:a6800d4d7975dad2b5478ff943879ea41a9430787228f68fab4ef844302de808",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "2.0.0.1939"
+  "version": "3.0.2.1943"
 }
