@@ -1175,6 +1175,18 @@
       "pr-radarr-upstream-10-1da49fa"
     ]
   },
+  "pr-release-push-improvement": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2025-12-31T06:24:20.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20613488704",
+    "latest": false,
+    "tags": [
+      "pr-release-push-improvement",
+      "pr-release-push-improvement-3.0.2.1943",
+      "pr-release-push-improvement-aaf4455"
+    ]
+  },
   "pr-remonitor-changes": {
     "description": "",
     "hide": true,
