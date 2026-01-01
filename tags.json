@@ -515,6 +515,18 @@
       "pr-fix-changelog-linking-e8e2b0d"
     ]
   },
+  "pr-fix-date-input": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2026-01-01T08:51:37.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20635703920",
+    "latest": false,
+    "tags": [
+      "pr-fix-date-input",
+      "pr-fix-date-input-3.0.2.1961",
+      "pr-fix-date-input-b6a54cb"
+    ]
+  },
   "pr-fix-external-id-import": {
     "description": "",
     "hide": true,
