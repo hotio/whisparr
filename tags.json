@@ -779,6 +779,18 @@
       "pr-january-radarr-upstream-2-0c3c141"
     ]
   },
+  "pr-january-radarr-upstream-3": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2026-01-02T04:12:18.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20650654578",
+    "latest": false,
+    "tags": [
+      "pr-january-radarr-upstream-3",
+      "pr-january-radarr-upstream-3-3.0.2.1973",
+      "pr-january-radarr-upstream-3-09c668b"
+    ]
+  },
   "pr-localization": {
     "description": "",
     "hide": true,
