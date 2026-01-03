@@ -263,6 +263,21 @@
       "pr-add-parser-to-scene-index-0a97fc5"
     ]
   },
+  "pr-azure-pipeline-refactor": {
+    "description": "",
+    "hide": true,
+    "last_updated": "2026-01-03T21:43:29.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20683301597",
+    "latest": false,
+    "tags": [
+      "pr-azure-pipeline-refactor",
+      "pr-azure-pipeline-refactor-3.0.2.2002",
+      "pr-azure-pipeline-refactor-ddd128c",
+      "",
+      "",
+      ""
+    ]
+  },
   "pr-codeql-logging-fix": {
     "description": "",
     "hide": true,
