@@ -294,6 +294,23 @@
       "pr-codeql-logging-fix-59275bd"
     ]
   },
+  "pr-commit-tagging": {
+    "commit_message": "Version update: 3.1.0.2039 => 3.1.0.2041",
+    "commit_sha": "5b360ef5a9cf3e8f2e7517724ee21d4fea151171",
+    "description": "",
+    "hide": true,
+    "last_updated": "2026-01-05T04:39:14.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20705281935",
+    "latest": false,
+    "tags": [
+      "pr-commit-tagging",
+      "pr-commit-tagging-3.1.0.2041",
+      "pr-commit-tagging-5b360ef",
+      "",
+      "",
+      ""
+    ]
+  },
   "pr-december-radarr-upstream-1": {
     "description": "",
     "hide": true,
