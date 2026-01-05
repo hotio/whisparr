@@ -510,6 +510,23 @@
       "pr-disk-scan-history-events-75d51da"
     ]
   },
+  "pr-dotnet-8": {
+    "commit_message": "Version update: 3.0.2.2002 => 3.1.0.2039",
+    "commit_sha": "87e97880d9876e01fb5163a0fb00a28f0dad8d78",
+    "description": "",
+    "hide": true,
+    "last_updated": "2026-01-05T01:06:06.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20702069209",
+    "latest": false,
+    "tags": [
+      "pr-dotnet-8",
+      "pr-dotnet-8-3.1.0.2039",
+      "pr-dotnet-8-87e9788",
+      "",
+      "",
+      ""
+    ]
+  },
   "pr-existing-scene-shows-as-downloading": {
     "description": "",
     "hide": true,
