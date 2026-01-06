@@ -1434,6 +1434,23 @@
       "pr-suppress-warnings-for-recent-API-changes-6df6b26"
     ]
   },
+  "pr-swaggerui": {
+    "commit_message": "Version update: 3.0.2.2002 => 3.1.0.2056",
+    "commit_sha": "7ac5f736386bd1da246aa0880dcc286051472777",
+    "description": "",
+    "hide": true,
+    "last_updated": "2026-01-06T02:58:58.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20736461776",
+    "latest": false,
+    "tags": [
+      "pr-swaggerui",
+      "pr-swaggerui-3.1.0.2056",
+      "pr-swaggerui-7ac5f73",
+      "",
+      "",
+      ""
+    ]
+  },
   "pr-typescript-form-components": {
     "description": "",
     "hide": true,
