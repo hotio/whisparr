@@ -822,6 +822,23 @@
       "pr-january-radarr-upstream-1-7984801"
     ]
   },
+  "pr-january-radarr-upstream-10": {
+    "commit_message": "Version update: 3.0.2.2002 => 3.1.0.2058",
+    "commit_sha": "fa2dce9daf346cd0470a8140f25233ff5a63b8c6",
+    "description": "",
+    "hide": true,
+    "last_updated": "2026-01-06T09:46:50.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20744466290",
+    "latest": false,
+    "tags": [
+      "pr-january-radarr-upstream-10",
+      "pr-january-radarr-upstream-10-3.1.0.2058",
+      "pr-january-radarr-upstream-10-fa2dce9",
+      "",
+      "",
+      ""
+    ]
+  },
   "pr-january-radarr-upstream-2": {
     "description": "",
     "hide": true,
