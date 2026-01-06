@@ -268,17 +268,17 @@
     ]
   },
   "pr-azure-pipeline-refactor": {
-    "commit_message": "Version update: 3.1.0.2041 => 3.0.2.2002",
-    "commit_sha": "d3fdde5109f79585ab51efe8174342dc2070f95d",
+    "commit_message": "Version update: 3.1.0.2056 => 3.0.2.2002",
+    "commit_sha": "3e10aa18e46a187c006306e59817d89c03de6475",
     "description": "",
     "hide": true,
-    "last_updated": "2026-01-06T01:00:59.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20734242528",
+    "last_updated": "2026-01-06T04:01:11.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20737549485",
     "latest": false,
     "tags": [
       "pr-azure-pipeline-refactor",
       "pr-azure-pipeline-refactor-3.0.2.2002",
-      "pr-azure-pipeline-refactor-d3fdde5",
+      "pr-azure-pipeline-refactor-3e10aa1",
       "",
       "",
       ""
