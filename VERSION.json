@@ -1,5 +1,5 @@
 {
-  "branch": "january-radarr-upstream-10",
+  "branch": "azure-pipeline-refactor",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
@@ -8,5 +8,5 @@
   "upstream_digest_arm64": "sha256:0edf8a97873a9bdd1778e16d0c330b2225c4b513c98d6a64dfa797668cbace7e",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "version": "3.1.0.2058"
+  "version": "3.0.2.2002"
 }
