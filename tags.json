@@ -1506,17 +1506,17 @@
     ]
   },
   "v3": {
-    "commit_message": "Upstream image update",
-    "commit_sha": "615b2663a8f88678bb684bbd03efb767cb98978a",
+    "commit_message": "Version update: 3.1.0.2060 => 3.1.0.2064",
+    "commit_sha": "954ac8ae2be2f7539763c002d9eb77afcb3735df",
     "description": "eros",
     "hide": false,
-    "last_updated": "2026-01-07T03:58:09.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20770111830",
+    "last_updated": "2026-01-07T04:49:51.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20770969347",
     "latest": false,
     "tags": [
       "v3",
-      "v3-3.1.0.2060",
-      "v3-615b266",
+      "v3-3.1.0.2064",
+      "v3-954ac8a",
       "",
       "",
       ""
