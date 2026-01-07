@@ -1,15 +1,16 @@
 {
   "nightly": {
     "commit_message": "Upstream image update",
+    "commit_sha": "6897a805b433df7d1ec7ef4cf44076cf22b82a27",
     "description": "nightly",
     "hide": false,
-    "last_updated": "2026-01-04T09:23:23.000Z",
-    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20690795678",
+    "last_updated": "2026-01-07T03:58:07.000Z",
+    "last_updated_url": "https://github.com/hotio/whisparr/actions/runs/20770111438",
     "latest": true,
     "tags": [
       "nightly",
       "nightly-2.0.0.1953",
-      "nightly-c1c5ea6",
+      "nightly-6897a80",
       "",
       "",
       ""
