@@ -1,5 +1,5 @@
 {
-  "branch": "azure-pipeline-refactor",
+  "version_branch": "azure-pipeline-refactor",
   "hide": true,
   "test_amd64": true,
   "test_arm64": true,
