@@ -1,10 +1,13 @@
 #!/bin/bash
 set -exuo pipefail
 
-version_branch="eros"
-version=$(curl -fsSL "https://whisparr.servarr.com/v1/update/${version_branch}/changes?os=linuxmusl&runtime=netcore&arch=x64" | jq -re '.[0].version')
+json=$(curl -fsSL "https://api.github.com/repos/Whisparr/Whisparr-Eros/releases" | jq -re 'map(select(.prerelease == false)) | first')
+version=$(jq -re '.tag_name' <<< "${json}" | sed 's/^v//')
+version_url_arm64=$(jq -re '.assets[].browser_download_url | select(contains("linux-musl-arm64"))' <<< "${json}")
+version_url_amd64=$(jq -re '.assets[].browser_download_url | select(contains("linux-musl-x64"))' <<< "${json}")
 json=$(cat meta.json)
 jq --sort-keys \
-    --arg version "${version//v/}" \
-    --arg version_branch "${version_branch}" \
-    '.version = $version | .version_branch = $version_branch' <<< "${json}" | tee meta.json
+    --arg version "${version}" \
+    --arg version_url_arm64 "${version_url_arm64}" \
+    --arg version_url_amd64 "${version_url_amd64}" \
+    '.version = $version | .version_url_arm64 = $version_url_arm64 | .version_url_amd64 = $version_url_amd64' <<< "${json}" | tee meta.json
