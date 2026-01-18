@@ -5,9 +5,9 @@ json=$(curl -fsSL "https://api.github.com/repos/whisparr/whisparr-eros/actions/r
 version=$(jq -re '.head_sha' <<< "${json}")
 version_branch=$(jq -re '.head_branch' <<< "${json}")
 url=$(jq -re '.artifacts_url' <<< "${json}")
-json_artifacts=$(jq -re '.artifacts[]' <<< "$(curl -fsSL "${url}")")
-version_url_amd64=$(jq -re '. | select(.name | contains("build-linux-musl-x64")) | .archive_download_url' <<< "${json_artifacts}")
-version_url_arm64=$(jq -re '. | select(.name | contains("build-linux-musl-arm64")) | .archive_download_url' <<< "${json_artifacts}")
+json_artifacts=$(jq -re '.artifacts[]' <<< "$(curl -fsSL "${url}?per_page=100")")
+version_url_amd64=$(jq -re '. | select(.name | contains("release-linux-musl-x64")) | .archive_download_url' <<< "${json_artifacts}")
+version_url_arm64=$(jq -re '. | select(.name | contains("release-linux-musl-arm64")) | .archive_download_url' <<< "${json_artifacts}")
 
 json=$(cat meta.json)
 jq --sort-keys \

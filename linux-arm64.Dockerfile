@@ -13,9 +13,11 @@ ARG VERSION_BRANCH
 ARG VERSION_URL_ARM64
 ARG PACKAGE_VERSION=${VERSION}
 RUN --mount=type=secret,id=GIT_AUTH_TOKEN,env=TOKEN \
-    extractdir="/tmp/whisparr" && mkdir "${extractdir}" && \
-    zipfile="/tmp/app.zip" && curl -fsSL -H "Authorization: Bearer ${TOKEN}" -o "${zipfile}" "${VERSION_URL_ARM64}" && unzip -q "${zipfile}" -d "${extractdir}" && rm "${zipfile}" && \
-    mv /${extractdir}/*/net10.0/Whisparr "${APP_DIR}/bin" && \
+    mkdir "${APP_DIR}/bin" && \
+    extractdir="/tmp/whisparr" && mkdir "${extractdir}" && zipfile="${extractdir}/app.zip" && \
+    curl -fsSL -H "Authorization: Bearer ${TOKEN}" -o "${zipfile}" "${VERSION_URL_ARM64}" && \
+    unzip -q "${zipfile}" -d "${extractdir}" && \
+    tar xzf "${extractdir}/"*.tar.gz -C "${APP_DIR}/bin" --strip-components=1 && \
     rm -rf "${APP_DIR}/bin/Whisparr.Update" "${extractdir}" && \
     echo -e "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=${VERSION_BRANCH}" > "${APP_DIR}/package_info" && \
     chmod -R u=rwX,go=rX "${APP_DIR}" && \
