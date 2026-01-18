@@ -12,7 +12,7 @@ version_url_arm64=$(jq -re '. | select(.name | contains("build-linux-musl-arm64"
 json=$(cat meta.json)
 jq --sort-keys \
     --arg version "${version}" \
-    --arg version_branch "${version_branch,,}" \
+    --arg version_branch "${version_branch}" \
     --arg version_url_arm64 "${version_url_arm64}" \
     --arg version_url_amd64 "${version_url_amd64}" \
     '.version = $version | .version_branch = $version_branch | .version_url_arm64 = $version_url_arm64 | .version_url_amd64 = $version_url_amd64' <<< "${json}" | tee meta.json
