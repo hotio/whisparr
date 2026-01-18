@@ -10,12 +10,16 @@ RUN apk add --no-cache libintl sqlite-libs icu-libs
 
 ARG VERSION
 ARG VERSION_BRANCH
+ARG VERSION_URL_AMD64
 ARG PACKAGE_VERSION=${VERSION}
-RUN mkdir "${APP_DIR}/bin" && \
-    curl -fsSL "https://whisparr.servarr.com/v1/update/${VERSION_BRANCH}/updatefile?version=${VERSION}&os=linuxmusl&runtime=netcore&arch=x64" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
-    rm -rf "${APP_DIR}/bin/Whisparr.Update" && \
+RUN --mount=type=secret,id=GIT_AUTH_TOKEN,env=TOKEN \
+    extractdir="/tmp/whisparr" && mkdir "${extractdir}" && \
+    zipfile="/tmp/app.zip" && curl -fsSL -H "Authorization: Bearer ${TOKEN}" -o "${zipfile}" "${VERSION_URL_AMD64}" && unzip -q "${zipfile}" -d "${extractdir}" && rm "${zipfile}" && \
+    mv /${extractdir}/*/net10.0/Whisparr "${APP_DIR}/bin" && \
+    rm -rf "${APP_DIR}/bin/Whisparr.Update" "${extractdir}" && \
     echo -e "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=${VERSION_BRANCH}" > "${APP_DIR}/package_info" && \
-    chmod -R u=rwX,go=rX "${APP_DIR}"
+    chmod -R u=rwX,go=rX "${APP_DIR}" && \
+    chmod +x "${APP_DIR}/bin/Whisparr"
 
 COPY root/ /
 RUN find /etc/s6-overlay/s6-rc.d -name "run*" -execdir chmod +x {} +
