@@ -6,8 +6,8 @@
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-6480c7b",
-  "version": "c418ffc1c504daf309c4c02711f97213be788316",
-  "version_branch": "eros_migrate_monitor",
-  "version_url_amd64": "https://api.github.com/repos/Whisparr/Whisparr-Eros/actions/artifacts/5168326018/zip",
-  "version_url_arm64": "https://api.github.com/repos/Whisparr/Whisparr-Eros/actions/artifacts/5168325899/zip"
+  "version": "44b7f18ac9cd0a927c9d3e4219af61047eb693ba",
+  "version_branch": "eros-develop",
+  "version_url_amd64": "https://api.github.com/repos/Whisparr/Whisparr-Eros/actions/artifacts/5169613235/zip",
+  "version_url_arm64": "https://api.github.com/repos/Whisparr/Whisparr-Eros/actions/artifacts/5169613439/zip"
 }
