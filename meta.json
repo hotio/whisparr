@@ -5,7 +5,7 @@
   "test_url": "http://localhost:6969/system/status",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-1d9f62f",
+  "upstream_tag_sha": "alpinevpn-2c8fbe3",
   "version": "dfd8df9b211dddfdb328c2d566d102d732ff2707",
   "version_branch": "eros_fix_api_documentation",
   "version_url_amd64": "https://api.github.com/repos/Whisparr/Whisparr-Eros/actions/artifacts/5187086184/zip",
