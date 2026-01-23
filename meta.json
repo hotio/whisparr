@@ -1,5 +1,5 @@
 {
-  "description": "develop",
+  "description": "v2-develop",
   "hide": false,
   "latest": false,
   "test_amd64": true,
@@ -9,7 +9,7 @@
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-3f254df",
   "version": "2.1.0-develop.21",
-  "version_branch": "develop",
+  "version_branch": "v2-develop",
   "version_url_amd64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-develop.21/Whisparr.2.1.0-develop.21.linux-musl-x64.tar.gz",
   "version_url_arm64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-develop.21/Whisparr.2.1.0-develop.21.linux-musl-arm64.tar.gz"
 }
