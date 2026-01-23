@@ -1,15 +1,15 @@
 {
-  "description": "eros",
+  "description": "v2",
   "hide": false,
-  "latest": false,
+  "latest": true,
   "test_amd64": true,
   "test_arm64": true,
   "test_url": "http://localhost:6969/system/status",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-c2217dd",
-  "version": "3.2.0-release.27",
-  "version_branch": "eros",
-  "version_url_amd64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.0-release.27/Whisparr.eros.3.2.0-release.27.linux-musl-x64.tar.gz",
-  "version_url_arm64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.0-release.27/Whisparr.eros.3.2.0-release.27.linux-musl-arm64.tar.gz"
+  "version": "2.1.0-release.6",
+  "version_branch": "v2",
+  "version_url_amd64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-release.6/Whisparr.2.1.0-release.6.linux-musl-x64.tar.gz",
+  "version_url_arm64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-release.6/Whisparr.2.1.0-release.6.linux-musl-arm64.tar.gz"
 }
