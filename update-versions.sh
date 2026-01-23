@@ -1,7 +1,7 @@
 #!/bin/bash
 set -exuo pipefail
 
-json=$(curl -fsSL "https://api.github.com/repos/whisparr/whisparr-eros/actions/runs" | jq -re '[.workflow_runs[] | select(.name == "Build") | select(.conclusion == "success") | select(.event == "pull_request") | select(.actor.login != "dependabot[bot]")| .][0]')
+json=$(curl -fsSL "https://api.github.com/repos/whisparr/whisparr/actions/runs" | jq -re '[.workflow_runs[] | select(.name == "Build") | select(.conclusion == "success") | select(.event == "pull_request") | select(.actor.login != "dependabot[bot]")| .][0]')
 version=$(jq -re '.head_sha' <<< "${json}")
 version_branch=$(jq -re '.head_branch' <<< "${json}")
 url=$(jq -re '.artifacts_url' <<< "${json}")
