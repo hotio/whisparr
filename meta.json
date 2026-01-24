@@ -7,7 +7,7 @@
   "test_url": "http://localhost:6969/system/status",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-3f254df",
+  "upstream_tag_sha": "alpinevpn-d7cd40a",
   "version": "3.2.1-release.65",
   "version_branch": "eros",
   "version_url_amd64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.1-release.65/Whisparr.eros.3.2.1-release.65.linux-musl-x64.tar.gz",
