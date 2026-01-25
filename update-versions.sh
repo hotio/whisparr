@@ -1,7 +1,7 @@
 #!/bin/bash
 set -exuo pipefail
 
-json=$(curl -fsSL "https://api.github.com/repos/Whisparr/Whisparr-Eros/releases" | jq -re 'map(select(.prerelease == false)) | first')
+json=$(curl -fsSL --header "Authorization: Bearer ${GITHUB_TOKEN}" "https://api.github.com/repos/Whisparr/Whisparr-Eros/releases" | jq -re 'map(select(.prerelease == false)) | first')
 version=$(jq -re '.tag_name' <<< "${json}" | sed 's/^v//')
 version_url_arm64=$(jq -re '.assets[].browser_download_url | select(contains("linux-musl-arm64"))' <<< "${json}")
 version_url_amd64=$(jq -re '.assets[].browser_download_url | select(contains("linux-musl-x64"))' <<< "${json}")
