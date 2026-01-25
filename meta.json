@@ -7,7 +7,7 @@
   "test_url": "http://localhost:6969/system/status",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-d7cd40a",
+  "upstream_tag_sha": "alpinevpn-46fe99f",
   "version": "3.2.2-develop.100",
   "version_branch": "eros-develop",
   "version_url_amd64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.2-develop.100/Whisparr.eros-develop.3.2.2-develop.100.linux-musl-x64.tar.gz",
