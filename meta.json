@@ -8,8 +8,8 @@
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-46fe99f",
-  "version": "2.1.0-develop.43",
+  "version": "2.1.0-develop.56",
   "version_branch": "v2-develop",
-  "version_url_amd64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-develop.43/Whisparr.2.1.0-develop.43.linux-musl-x64.tar.gz",
-  "version_url_arm64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-develop.43/Whisparr.2.1.0-develop.43.linux-musl-arm64.tar.gz"
+  "version_url_amd64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-develop.56/Whisparr.2.1.0-develop.56.linux-musl-x64.tar.gz",
+  "version_url_arm64": "https://github.com/Whisparr/Whisparr/releases/download/v2.1.0-develop.56/Whisparr.2.1.0-develop.56.linux-musl-arm64.tar.gz"
 }
