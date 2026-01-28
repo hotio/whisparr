@@ -5,7 +5,7 @@
   "test_url": "http://localhost:6969/system/status",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-7ce2a5c",
+  "upstream_tag_sha": "alpinevpn-24b1ed4",
   "version": "fa2319b325f3d9a76fa2868c4c63bc27443483b5",
   "version_branch": "sonarr-upstream-sync-batch15",
   "version_url_amd64": "https://api.github.com/repos/Whisparr/Whisparr/actions/artifacts/5265403694/zip",
