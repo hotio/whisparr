@@ -8,8 +8,8 @@
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-e5bbee4",
-  "version": "3.2.3-develop.226",
+  "version": "3.2.3-develop.232",
   "version_branch": "eros-develop",
-  "version_url_amd64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.3-develop.226/Whisparr.eros-develop.3.2.3-develop.226.linux-musl-x64.tar.gz",
-  "version_url_arm64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.3-develop.226/Whisparr.eros-develop.3.2.3-develop.226.linux-musl-arm64.tar.gz"
+  "version_url_amd64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.3-develop.232/Whisparr.eros-develop.3.2.3-develop.232.linux-musl-x64.tar.gz",
+  "version_url_arm64": "https://github.com/Whisparr/Whisparr-Eros/releases/download/v3.2.3-develop.232/Whisparr.eros-develop.3.2.3-develop.232.linux-musl-arm64.tar.gz"
 }
