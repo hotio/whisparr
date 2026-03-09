@@ -6,8 +6,8 @@
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-9abb66b",
-  "version": "ed91c843742efcc20221f31761935cbe216140ba",
-  "version_branch": "Revert-Season-Search-Changes",
-  "version_url_amd64": "https://api.github.com/repos/Whisparr/Whisparr/actions/artifacts/5802837894/zip",
-  "version_url_arm64": "https://api.github.com/repos/Whisparr/Whisparr/actions/artifacts/5802837175/zip"
+  "version": "b4a95bc29a1dfe8d2fffdcf1001aca7fb23ef888",
+  "version_branch": "sonarr-upstream-sync-batch17-pr",
+  "version_url_amd64": "https://api.github.com/repos/Whisparr/Whisparr/actions/artifacts/5821721831/zip",
+  "version_url_arm64": "https://api.github.com/repos/Whisparr/Whisparr/actions/artifacts/5821721736/zip"
 }
