@@ -8,7 +8,7 @@
   "test_url": "http://localhost:6969/system/status",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-04f9ffe",
+  "upstream_tag_sha": "alpinevpn-e6491e4",
   "version": "2.2.0-develop.115",
   "version_branch": "v2-develop",
   "version_url_amd64": "https://github.com/Whisparr/Whisparr/releases/download/v2.2.0-develop.115/Whisparr.2.2.0-develop.115.linux-musl-x64.tar.gz",
