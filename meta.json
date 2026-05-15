@@ -7,7 +7,7 @@
   "test_url": "http://localhost:6969/system/status",
   "upstream_image": "ghcr.io/hotio/base",
   "upstream_tag": "alpinevpn",
-  "upstream_tag_sha": "alpinevpn-f3c5595",
+  "upstream_tag_sha": "alpinevpn-9fa1971",
   "version": "2.2.0-release.108",
   "version_branch": "v2",
   "version_url_amd64": "https://github.com/Whisparr/Whisparr/releases/download/v2.2.0-release.108/Whisparr.2.2.0-release.108.linux-musl-x64.tar.gz",
