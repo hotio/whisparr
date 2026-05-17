@@ -12,10 +12,11 @@ ARG VERSION
 ARG VERSION_BRANCH
 ARG VERSION_URL_AMD64
 ARG PACKAGE_VERSION=${VERSION}
+
 RUN --mount=type=secret,id=GIT_AUTH_TOKEN.github.com,env=TOKEN \
     mkdir "${APP_DIR}/bin" && \
     extractdir="/tmp/whisparr" && mkdir "${extractdir}" && zipfile="${extractdir}/app.zip" && \
-    curl -fsSL -H "Authorization: Bearer ${TOKEN}" -o "${zipfile}" "${VERSION_URL_AMD64}" && \
+    curl -fsSL ${TOKEN:+--header "Authorization: Bearer ${TOKEN}"} -o "${zipfile}" "${VERSION_URL_AMD64}" && \
     unzip -q "${zipfile}" -d "${extractdir}" && \
     tar xzf "${extractdir}/"*.tar.gz -C "${APP_DIR}/bin" --strip-components=1 && \
     rm -rf "${APP_DIR}/bin/Whisparr.Update" "${extractdir}" && \
