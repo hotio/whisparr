@@ -10,10 +10,10 @@ RUN apk add --no-cache libintl sqlite-libs icu-libs
 
 ARG VERSION
 ARG VERSION_BRANCH
-ARG VERSION_URL_AMD64
 ARG PACKAGE_VERSION=${VERSION}
+
 RUN mkdir "${APP_DIR}/bin" && \
-    curl -fsSL "${VERSION_URL_AMD64}" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
+    curl -fsSL "https://github.com/Whisparr/Whisparr/releases/download/v${VERSION}/Whisparr.${VERSION}.linux-musl-x64.tar.gz" | tar xzf - -C "${APP_DIR}/bin" --strip-components=1 && \
     rm -rf "${APP_DIR}/bin/Whisparr.Update" && \
     echo -e "PackageVersion=${PACKAGE_VERSION}\nPackageAuthor=[hotio](https://github.com/hotio)\nUpdateMethod=Docker\nBranch=${VERSION_BRANCH}" > "${APP_DIR}/package_info" && \
     chmod -R u=rwX,go=rX "${APP_DIR}"
