@@ -8,9 +8,10 @@ ENV IMAGE_STATS=${IMAGE_STATS} WEBUI_PORTS="6969/tcp"
 
 RUN apk add --no-cache libintl sqlite-libs icu-libs
 
+ARG VERSION
 ARG VERSION_URL_ARM64
 ARG VERSION_BRANCH
-ARG PACKAGE_VERSION
+ARG PACKAGE_VERSION=${VERSION}
 
 RUN --mount=type=secret,id=GIT_AUTH_TOKEN.github.com,env=TOKEN \
     mkdir "${APP_DIR}/bin" && \
