@@ -9,7 +9,7 @@
   "upstream_tag": "alpinevpn",
   "upstream_tag_sha": "alpinevpn-2e779e8",
   "upstream_tag_sha__command": "json=$(cat meta.json) && upstream_image=$(jq -re '.upstream_image' <<< \"${json}\") && upstream_image_base=$(basename \"${upstream_image}\") && upstream_tag=$(jq -re '.upstream_tag' <<< \"${json}\") && tags_json=$(curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://hotio.dev/containers/${upstream_image_base}-tags.json\") && commit_sha=$(jq -r --arg tag \"${upstream_tag}\" '.[$tag].commit_sha' <<< \"${tags_json}\") && upstream_tag_sha=${upstream_tag}-${commit_sha:0:7} && echo \"${upstream_tag_sha}\"",
-  "version": "2.2.0-develop.198",
+  "version": "2.2.0-develop.202",
   "version__command": "curl -fsSL ${GITHUB_TOKEN:+--header \"Authorization: Bearer ${GITHUB_TOKEN}\"} \"https://api.github.com/repos/Whisparr/Whisparr/releases\" | jq -re 'map(select(.prerelease == true)) | first' | jq -re '.tag_name' | sed -E 's/^v//'",
   "version_branch": "v2-develop"
 }
